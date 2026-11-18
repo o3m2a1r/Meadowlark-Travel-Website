@@ -1,0 +1,22 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "a travel website",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o3m2a1r/Meadowlark-Travel-Website.git"
+  },
+  "keywords": [
+    "open"
+  ],
+  "author": "omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o3m2a1r/Meadowlark-Travel-Website/issues"
+  },
+  "homepage": "https://github.com/o3m2a1r/Meadowlark-Travel-Website#readme"
+}
