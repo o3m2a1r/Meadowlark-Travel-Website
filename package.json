@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/o3m2a1r/Meadowlark-Travel-Website#readme",
   "dependencies": {
-    "express": "^5.3.0"
+    "express": "4.x"
   }
 }
