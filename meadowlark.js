@@ -10,12 +10,22 @@ app.set('view engine', 'handlebars');
 
 app.set("port",process.env.PORT || 3000);
 
+var fortunes = [
+    "Conquer your fears or they will conquer you.",
+    "Rivers need springes.",
+    "Do not fear what you don't know.",
+    "You will have a pleasant surprise.",
+    "Whenever possible, keep it simple."
+];
+
 app.use(express.static(__dirname+ '/public'));
 app.get('/',function(req,res){
     res.render('home');
 });
 app.get('/about',function(req,res){
-    res.render('about');
+    var randomFortune = 
+    fortunes[Math.floor(Math.random()*fortunes.length)];
+    res.render('about', {fortune : randomFortune});
 });
 // 404 catch-all handler (middleware)
 app.use(function(req,res,next){
