@@ -26,10 +26,10 @@ app.get('/about',function(req,res){
     pageTestScript : '/qa/tests-about.js'});
 });
 
-app.get('/tours/hood-river',function(){
+app.get('/tours/hood-river',function(req,res){
     res.render('tours/hood-river');
 });
-app.get('/tours/request-group-rate',function(){
+app.get('/tours/request-group-rate',function(req,res){
     res.render('tours/request-group-rate');
 });
 // 404 catch-all handler (middleware)
