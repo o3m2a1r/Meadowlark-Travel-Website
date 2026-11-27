@@ -25,6 +25,13 @@ app.get('/about',function(req,res){
     res.render('about', {fortune : fortune.getFortune(),
     pageTestScript : '/qa/tests-about.js'});
 });
+
+app.get('/tours/hood-river',function(){
+    res.render('tours/hood-river');
+});
+app.get('/tours/request-group-rate',function(){
+    res.render('tours/request-group-rate');
+});
 // 404 catch-all handler (middleware)
 app.use(function(req,res,next){
     res.status(404);
